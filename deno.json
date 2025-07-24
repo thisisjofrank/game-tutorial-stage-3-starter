@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --env-file --watch src/main.ts",
+    "start": "deno run --allow-net --allow-read --allow-env src/main.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@17"
+  },
+  "deploy": {
+    "project": "game-tutorial-stage-2",
+    "entrypoint": "src/main.ts"
+  }
+}
