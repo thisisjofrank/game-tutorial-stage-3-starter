@@ -531,7 +531,7 @@ You have now created:
 
 ## Understanding the complete game architecture
 
-### Obstacle Management System
+### Obstacle management system
 
 The obstacle system is the heart of the gameplay challenge:
 
@@ -550,7 +550,7 @@ Each frame, obstacles:
 3. **Award points** when successfully avoided
 4. **Spawn randomly** based on difficulty timers
 
-### Collision Detection Algorithm
+### Collision detection algorithm
 
 Our collision detection uses **Axis-Aligned Bounding Box (AABB)** collision:
 
@@ -568,7 +568,7 @@ if (
 
 This method is fast, accurate, and perfect for rectangular game objects.
 
-### High Score Persistence
+### High score persistence
 
 We use the browser's `localStorage` API for data persistence:
 
@@ -583,7 +583,7 @@ const highScore = localStorage.getItem("dinoHighScore");
 This creates a personalized experience where players can compete against their
 own best scores.
 
-### Progressive Difficulty System
+### Progressive difficulty system
 
 The game becomes more challenging over time in two ways:
 
@@ -598,7 +598,7 @@ gameSpeed = baseSpeed + (difficultyLevel * 0.5); // Faster movement
 spawnRate = Math.max(60, 120 - (difficultyLevel * 10)); // More frequent spawns
 ```
 
-### Game State Management
+### Game state management
 
 Our game now has three distinct states with different behaviors:
 
@@ -653,7 +653,8 @@ After completing Stage 3, you should understand:
 
 ## Ready for Stage 4?
 
-Congratulations! You now have a **complete, playable infinite runner game**. In Stage 4, you'll add data storage features:
+Congratulations! You now have a **complete, playable infinite runner game**. In
+Stage 4, you'll add data storage features:
 
 - Database integration for persistent leaderboards
 - Player customization system with different dino colors
