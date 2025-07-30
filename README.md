@@ -265,7 +265,7 @@ updateHighScore() {
   }
 }
 
-// NEW: Reset game to initial state
+// UPDATE: Reset game to initial state
 resetGame() {
   this.dino.y = this.dino.groundY;
   this.dino.velocityY = 0;
@@ -278,7 +278,7 @@ resetGame() {
 
 ### Update existing methods
 
-Update your existing `startGame()`, `handleJump()`, `updatePhysics()`, and
+Update your existing `startGame()`, `updatePhysics()`, and
 `render()` methods to incorporate the new obstacle system, game over state, and
 high score tracking.
 
@@ -297,17 +297,6 @@ startGame() {
   this.updateScore();
   this.updateStatus("");
   console.log("🎮 Game started!");
-}
-
-// UPDATE: Enhanced handleJump method
-handleJump() {
-  if (this.gameState === "waiting") {
-    this.startGame();
-  } else if (this.gameState === "playing" && !this.dino.isJumping) {
-    this.jump();
-  } else if (this.gameState === "gameOver") {
-    this.resetGame(); // NEW: Reset instead of just restarting
-  }
 }
 
 // UPDATE: Enhanced updatePhysics method
@@ -632,6 +621,11 @@ Our game now has three distinct states with different behaviors:
    - Achieve a high score
    - Refresh the page or restart the browser
    - Verify your high score is still displayed
+
+## Deploy your updated game
+
+Commit your changes and push them to your repository, Deno Deploy will automatically deploy your updated game. You can see the live version at your
+Deno Deploy URL.
 
 ## Make it your own
 
