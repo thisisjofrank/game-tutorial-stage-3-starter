@@ -28,8 +28,9 @@ By the end of Stage 3, you'll have:
 
 ## Setup
 
-1. 1. Copy your Stage 2 project or deploy this starter kit:
-   [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install&entrypoint=src/main.ts&mode=dynamic)
+1.
+   1. Copy your Stage 2 project or deploy this starter kit:
+      [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install&entrypoint=src/main.ts&mode=dynamic)
 2. Ensure your `.env` file is configured
 3. Install dependencies: `deno install`
 
@@ -278,9 +279,8 @@ resetGame() {
 
 ### Update existing methods
 
-Update your existing `startGame()`, `updatePhysics()`, and
-`render()` methods to incorporate the new obstacle system, game over state, and
-high score tracking.
+Update your existing `startGame()`, `updatePhysics()`, and `render()` methods to
+incorporate the new obstacle system, game over state, and high score tracking.
 
 <details>
 <summary>📁 Update existing methods (click to expand)</summary>
@@ -624,7 +624,8 @@ Our game now has three distinct states with different behaviors:
 
 ## Deploy your updated game
 
-Commit your changes and push them to your repository, Deno Deploy will automatically deploy your updated game. You can see the live version at your
+Commit your changes and push them to your repository, Deno Deploy will
+automatically deploy your updated game. You can see the live version at your
 Deno Deploy URL.
 
 ## Make it your own
