@@ -28,9 +28,8 @@ By the end of Stage 3, you'll have:
 
 ## Setup
 
-1.
-   1. Copy your Stage 2 project or deploy this starter kit:
-      [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install&entrypoint=src/main.ts&mode=dynamic)
+1. Copy your Stage 2 project or deploy this starter kit:
+   [![Deploy on Deno](https://deno.com/button)](https://app.deno.com/new?clone=https://github.com/thisisjofrank/game-tutorial-stage-3-starter.git&install=deno+install&entrypoint=src/main.ts&mode=dynamic)
 2. Ensure your `.env` file is configured
 3. Install dependencies: `deno install`
 
@@ -68,7 +67,7 @@ and update your `public/css/styles.css`.
 
 ## Enhance the game engine
 
-Nor for the exciting part! We'll add some obstacles, collision detection, and
+Now for the exciting part! We'll add some obstacles, collision detection, and
 game over mechanics to our existing game!
 
 ### Add new properties to the DinoGame constructor
@@ -222,7 +221,7 @@ updateGameDifficulty() {
 ### Game over and high score methods
 
 Add methods to handle game over state, high score loading/saving, and resetting
-the game, well need a `gameOver()` method to handle the game over state, a
+the game, we'll need a `gameOver()` method to handle the game over state, a
 `loadHighScore()` method to load the high score from localStorage, a
 `saveHighScore()` method to save the current score if it's a new high score, and
 an `updateHighScore()` method to update the display. Finally, a `resetGame()`
